@@ -13,9 +13,6 @@ from app.prompts.rag_prompt import RAG_PROMPT
 def build_rag_chain(db: Chroma, llm: Ollama) -> object:
     """
     Build the RAG retrieval chain with hybrid search (vector + BM25) and reranking.
-
-    We bias toward semantic search (0.7) because it's generally stronger for most use cases,
-    but keep BM25 for keyword precision. Flashrank reranks the top candidates for better relevance.
     """
     # Vector retriever
     vector_retriever = db.as_retriever(
