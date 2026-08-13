@@ -1,4 +1,4 @@
-# Advance CV Insight – AI-Powered CV Analysis & Insight Engine
+# CV Insight Rag
 
 Intelligent semantic search, question-answering, and insight generation over resumes and CV documents using modern Retrieval-Augmented Generation (RAG).
 
